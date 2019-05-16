@@ -1,25 +1,31 @@
 {
-  "compilerOptions": {
-    "allowJs": false,
-    "charset": "utf8",
-    "importHelpers": true,
-    "jsx": "react",
-    "lib": [
-      "dom",
-      "es2015"
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "rootDir": "src",
+        "outDir": "dist",
+        "paths": {
+            "*": [
+                "*",
+                "node_modules/*"
+            ]
+        },
+        "allowJs": false,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "importHelpers": true,
+        "jsx": "react",
+        "jsxFactory": "h",
+        "preserveConstEnums": false,
+        "removeComments": true,
+        "sourceMap": true,
+    },
+    "exclude": [
+        "**/stories"
     ],
-    "module": "commonjs",
-    "noImplicitUseStrict": true,
-    "outDir": ".",
-    "removeComments": true,
-    "sourceMap": false,
-    "strictNullChecks": true,
-    "target": "es5"
-  },
-  "exclude": [
-    "**/stories"
-  ],
-  "include": [
-    "./src/**/*"
-  ]
+    "include": [
+        "./src/**/*"
+    ]
 }
